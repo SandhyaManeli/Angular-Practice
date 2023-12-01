@@ -1,0 +1,177 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "emp_name": "Sandhya1",
+      "emp_id": "1",
+      "emp_mobile": "123456711",
+      "emp_email": "sandhya@gmail.com",
+      "emp_act_date": "2023-11-01T18:30:00.000Z",
+      "emp_dob": "2017-02-13T18:30:00.000Z",
+      "emp_task_id": "1",
+      "emp_task_start_date": "2023-11-01T18:30:00.000Z",
+      "emp_task_end_date": "2023-11-28T18:30:00.000Z"
+    },
+    {
+      "emp_name": "Priya",
+      "emp_id": "2",
+      "emp_mobile": 7894561233,
+      "emp_email": "priya@gmail.com",
+      "emp_act_date": "2023-09-30T18:30:00.000Z",
+      "emp_dob": "2016-02-01T18:30:00.000Z",
+      "emp_task_id": 2,
+      "emp_task_start_date": "2023-10-31T18:30:00.000Z",
+      "emp_task_end_date": "2023-11-29T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "emp_name": "Deekshitha ",
+      "emp_id": "3",
+      "emp_mobile": "7979797979",
+      "emp_email": "deekshitha@gmail.com",
+      "emp_act_date": "2023-08-31T18:30:00.000Z",
+      "emp_dob": "2016-10-31T18:30:00.000Z",
+      "emp_task_id": "3",
+      "emp_task_start_date": "2023-11-01T18:30:00.000Z",
+      "emp_task_end_date": "2023-11-28T18:30:00.000Z"
+    },
+    {
+      "id": 4,
+      "emp_name": "Pavani",
+      "emp_id": "4",
+      "emp_mobile": "9689696969",
+      "emp_email": "pavani@gmail.com",
+      "emp_act_date": "2023-10-14T18:30:00.000Z",
+      "emp_dob": "2015-12-31T18:30:00.000Z",
+      "emp_task_id": "4",
+      "emp_task_start_date": "2023-11-01T18:30:00.000Z",
+      "emp_task_end_date": "2023-11-26T18:30:00.000Z"
+    },
+    {
+      "id": 5,
+      "emp_name": "Praveena",
+      "emp_id": "5",
+      "emp_mobile": "9898989898",
+      "emp_email": "praveena@gmail.com",
+      "emp_act_date": "2023-09-17T18:30:00.000Z",
+      "emp_dob": "2016-10-25T18:30:00.000Z",
+      "emp_task_id": "5",
+      "emp_task_start_date": "2023-11-05T18:30:00.000Z",
+      "emp_task_end_date": "2023-12-14T18:30:00.000Z"
+    },
+    {
+      "id": 6,
+      "emp_name": "Satya",
+      "emp_id": "6",
+      "emp_mobile": "9797979797",
+      "emp_email": "satya@gmail.com",
+      "emp_act_date": "2023-10-22T18:30:00.000Z",
+      "emp_dob": "2016-10-09T18:30:00.000Z",
+      "emp_task_id": "6",
+      "emp_task_start_date": "2023-11-12T18:30:00.000Z",
+      "emp_task_end_date": "2023-12-14T18:30:00.000Z"
+    },
+    {
+      "id": 7,
+      "emp_name": "Durga",
+      "emp_id": "7",
+      "emp_mobile": "9696969696",
+      "emp_email": "durga@gmail.com",
+      "emp_act_date": "2023-10-29T18:30:00.000Z",
+      "emp_dob": "2016-10-24T18:30:00.000Z",
+      "emp_task_id": "7",
+      "emp_task_start_date": "2023-11-07T18:30:00.000Z",
+      "emp_task_end_date": "2023-12-21T18:30:00.000Z"
+    },
+    {
+      "id": 8,
+      "emp_name": "Dileep",
+      "emp_id": "8",
+      "emp_mobile": "9898989898",
+      "emp_email": "dileep@gmail.com",
+      "emp_act_date": "2022-09-30T18:30:00.000Z",
+      "emp_dob": "2016-06-20T18:30:00.000Z",
+      "emp_task_id": "8",
+      "emp_task_start_date": "2016-10-24T18:30:00.000Z",
+      "emp_task_end_date": "2016-11-29T18:30:00.000Z"
+    },
+    {
+      "emp_name": "Sand1",
+      "emp_id": "91",
+      "emp_mobile": "9191919111",
+      "emp_email": "sand1@gmail.com",
+      "emp_act_date": "2023-10-02T18:30:00.000Z",
+      "emp_dob": "2016-01-31T18:30:00.000Z",
+      "emp_task_id": "91",
+      "emp_task_start_date": "2023-11-01T18:30:00.000Z",
+      "emp_task_end_date": "2023-11-28T18:30:00.000Z",
+      "id": 9
+    },
+    {
+      "emp_name": "Priya",
+      "emp_id": "10",
+      "emp_mobile": "9090990990",
+      "emp_email": "priyatest@gmail.com",
+      "emp_act_date": "2023-10-31T18:30:00.000Z",
+      "emp_dob": "2016-11-01T18:30:00.000Z",
+      "emp_task_id": "10",
+      "emp_task_start_date": "2023-10-31T18:30:00.000Z",
+      "emp_task_end_date": "2023-11-29T18:30:00.000Z",
+      "id": 10
+    },
+    {
+      "emp_name": "Sandy",
+      "emp_id": "12",
+      "emp_mobile": "9898989898",
+      "emp_email": "sandy@gmail.com",
+      "emp_act_date": "2023-09-30T18:30:00.000Z",
+      "emp_dob": "2016-02-01T18:30:00.000Z",
+      "emp_task_id": "12",
+      "emp_task_start_date": "2023-10-31T18:30:00.000Z",
+      "emp_task_end_date": "2023-11-29T18:30:00.000Z",
+      "id": 11
+    },
+    {
+      "emp_name": "Sand",
+      "emp_id": "13",
+      "emp_mobile": "9090909090",
+      "emp_email": "sand@gmailcom",
+      "emp_act_date": "2023-10-01T18:30:00.000Z",
+      "emp_dob": "2016-10-31T18:30:00.000Z",
+      "emp_task_id": "13",
+      "emp_task_start_date": "2023-10-31T18:30:00.000Z",
+      "emp_task_end_date": "2023-11-29T18:30:00.000Z",
+      "id": 12
+    },
+    {
+      "emp_name": "SandhyaRao",
+      "emp_id": "123",
+      "emp_mobile": "9090990909",
+      "emp_email": "sandhyarao@gmail.com",
+      "emp_act_date": "2023-10-22T18:30:00.000Z",
+      "emp_dob": "2016-02-01T18:30:00.000Z",
+      "emp_task_id": "123",
+      "emp_task_start_date": "2023-10-31T18:30:00.000Z",
+      "emp_task_end_date": "2023-11-29T18:30:00.000Z",
+      "id": 13
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

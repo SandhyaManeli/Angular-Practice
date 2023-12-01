@@ -1,0 +1,77 @@
+<div class="container add-employee-container">
+    <div>
+      <mat-card>
+        <h3 style="text-align: center">Add New Employee</h3>
+        <form [formGroup]="EmployeeDetail" (ngSubmit)="onSubmit()">
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>ID</mat-label>
+            <input matInput formControlName ="emp_id">
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline" class="form-element">
+            <mat-label>NAME</mat-label>
+            <input matInput formControlName="emp_name">
+              <div *ngIf="submitted && f['emp_name'].errors" class="invalid-feedback">
+              <div *ngIf="f['emp_name'].errors['required']">Name is required</div>
+          </div>
+          </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>EMAIL</mat-label>
+              <input matInput formControlName ="emp_email">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>MOBILE</mat-label>
+              <input matInput formControlName ="emp_mobile">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>ACTIVATE DATE</mat-label>
+              <input matInput [matDatepicker]="picker" formControlName="emp_act_date">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>DATE OF BIRTH</mat-label>
+              <input matInput [matDatepicker]="picker1" formControlName ="emp_dob">
+              <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+              <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>TASK ID</mat-label>
+              <input matInput formControlName ="emp_task_id">
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>TASK START DATE</mat-label>
+              <input matInput [matDatepicker]="picker2" formControlName ="emp_task_start_date">
+              <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+              <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field appearance="outline" class="form-element">
+              <mat-label>TASK END DATE</mat-label>
+              <input matInput [matDatepicker]="picker3" formControlName ="emp_task_end_date">
+              <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+              <mat-datepicker #picker3></mat-datepicker>
+            </mat-form-field>
+          </div>
+        <div>
+          <button mat-raised-button color="primary" (click)="createEmployee()">Create</button>
+        </div>
+        </form>
+      </mat-card>
+    </div>
+  </div>

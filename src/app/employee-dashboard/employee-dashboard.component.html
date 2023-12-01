@@ -1,0 +1,60 @@
+<div class="container all-employees-container">
+    <a mat-raised-button color="primary" routerLink="/add-employee">Add Employee</a>
+  </div>
+  <mat-form-field appearence="Fill">
+    <mat-label>Search</mat-label>
+    <input matInput type="text" (input)="searchFilter($event)" placeholder="Filter">
+  </mat-form-field>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="emp_id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let element"> {{element.emp_id}} </td>
+      </ng-container>
+      <ng-container matColumnDef="emp_name">
+        <th mat-header-cell *matHeaderCellDef> NAME </th>
+        <td mat-cell *matCellDef="let element"> 
+          <a [routerLink]="['/edit-employee', element.id]" style="color: blue;">{{element.emp_name}}</a>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="emp_email">
+        <th mat-header-cell *matHeaderCellDef> EMAIL </th>
+        <td mat-cell *matCellDef="let element"> {{element.emp_email}} </td>
+      </ng-container>
+      <ng-container matColumnDef="emp_mobile">
+        <th mat-header-cell *matHeaderCellDef> MOBILE </th>
+        <td mat-cell *matCellDef="let element"> {{element.emp_mobile}} </td>
+      </ng-container>
+      <ng-container matColumnDef="emp_act_date">
+        <th mat-header-cell *matHeaderCellDef> ACTIVATE DATE </th>
+        <td mat-cell *matCellDef="let element"> {{element.emp_act_date | date:'d/M/y'}} </td>
+      </ng-container>
+      <ng-container matColumnDef="emp_dob">
+        <th mat-header-cell *matHeaderCellDef> DATE OF BIRTH </th>
+        <td mat-cell *matCellDef="let element"> {{element.emp_dob | date:'d/M/y'}} </td>
+      </ng-container>
+      <ng-container matColumnDef="emp_task_id">
+        <th mat-header-cell *matHeaderCellDef> TASK ID </th>
+        <td mat-cell *matCellDef="let element"> {{element.emp_task_id}} </td>
+      </ng-container>
+      <ng-container matColumnDef="emp_task_start_date">
+        <th mat-header-cell *matHeaderCellDef> TASK START DATE </th>
+        <td mat-cell *matCellDef="let element"> {{element.emp_task_start_date | date:'d/M/y'}} </td>
+      </ng-container>
+      <ng-container matColumnDef="emp_task_end_date">
+        <th mat-header-cell *matHeaderCellDef> TASK END DATE </th>
+        <td mat-cell *matCellDef="let element"> {{element.emp_task_end_date | date:'d/M/y'}} </td>
+      </ng-container>
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Actions</th>
+        <td mat-cell *matCellDef="let element">
+          <!-- <a [routerLink]="['/edit-employee', element.id]">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" >edit</mat-icon>
+          </a> -->
+          <mat-icon (click)="openDeleteModal(element.id)" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSize]="3" [pageSizeOptions]="[3, 6, 12, 15, 18]">
+    </mat-paginator>
